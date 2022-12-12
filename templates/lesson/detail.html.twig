@@ -23,12 +23,11 @@
                                 <div class="row">
                                     {% for student in lesson.students %}
                                     <div class="col-lg-4">
-                                        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://bootdey.com/img/Content/avatar/avatar1.png" >
+                                        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://bootdey.com/img/Content/avatar/avatar7.png" >
 
                                         <h2>{{student.lastName}}</h2>
                                         <p> {{student.firstName}} </p>
                                         <p>
-                                            <b>Note:</b> {{student.grades[0].score}}
                                         </p>
                                         <p><a class="btn btn-secondary" href="{{ path('app_student_detail', {'id': student.id}) }}">View details &raquo;</a></p>
                                     </div>
@@ -48,14 +47,14 @@
                         <div class="widget-body mt-2">
                             <div class="media align-items-center">
                                 <div class="avatar">
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar6.png" title="" alt="">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" title="" alt="">
                                 </div>
                                 <div class="media-body">
                                     <h6>{{student.firstName}} {{student.lastName}}</h6>
                                 </div>
                             </div>
                             <p>{{student.email}}</p>
-                            <span>Note: {{student.grades[0].score}}</span>
+                            
                         </div>
                     {% endfor %}
                 </div>

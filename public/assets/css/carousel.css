@@ -8,11 +8,11 @@ body {
     padding-top: 3rem;
     padding-bottom: 3rem;
     color: #5a5a5a;
+    margin-top: 20px;
+    margin-left: 5px;
 }
 
-body {
-    margin-top: 20px;
-}
+
 
 .blog-listing {
     padding-top: 30px;

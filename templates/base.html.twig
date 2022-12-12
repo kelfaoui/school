@@ -6,7 +6,7 @@
         <meta name="description" content="">
         <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
         <meta name="generator" content="Hugo 0.101.0">
-        <title>{% block title %}EPITECH DIGITAL!{% endblock %}</title>
+        <title>{% block title %}INTRANET{% endblock %}</title>
         <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/carousel/">
         <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{asset('assets/css/carousel.css')}}" rel="stylesheet">
@@ -22,6 +22,29 @@
                     -ms-user-select: none;
                     user-select: none;
                 }
+                .footer{
+                    margin-left: 15rem;
+                    padding-top: 2rem;
+                    
+                }
+                .intranet{
+                    font-size: 21px;
+                    font-weight: bolder;
+                    color: rgb(192, 187, 187);
+                    
+                    
+                }
+                .intranet:hover{
+                    color: aqua;
+                    text-decoration: none; 
+                }
+                .navbar-dark .navbar-nav .nav-link{
+                    font-size: 18px;
+                    font-weight: bolder;
+                }
+                .navbar-dark .navbar-nav .nav-link:hover{
+                    color: aqua;
+                }
 
                 @media (min-width: 768px) {
                     .bd-placeholder-img-lg {
@@ -35,9 +58,9 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <a href="{{path('app_home')}}" id="branding">
+                <a href="{{path('app_home')}}" id="branding" class="intranet">
                         <img src="{{asset('assets/images/logo.png')}}" alt="Lincoln high School">
-                        EPITECH DIGITAL
+                        INTRANET
                     </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -66,9 +89,11 @@
         </header>
         <main role="main">
             {% block body %}{% endblock %}
-            <footer class="container">
-                <p class="float-right"><a class="btn btn-primary" href="#">Back to top</a></p>
-                <p>&copy; 2022 EPITECH DIGITAL, Copyright. &middot; <a href="#"> All rights reserved</a> &middot; <a href="#">Terms</a></p>
+            
+            <p class="float-right"><a class="btn btn-primary" href="#">Back to top</a></p>
+
+            <footer class="container ">
+                <p class="footer">&copy; 2022 Intranet By chabane KELFAOUI, Copyright. &middot; <a href="#"> All rights reserved</a> &middot; <a href="#">Terms</a></p>
             </footer>
         </main>
         {% block javascripts %}
